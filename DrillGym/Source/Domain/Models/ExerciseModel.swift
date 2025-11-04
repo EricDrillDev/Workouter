@@ -1,8 +1,8 @@
-//
-//  ExerciseModel.swift
-//  DrillGym
-//
-//  Created by Эрик Нугзарович on 11/3/25.
-//
-
 import Foundation
+
+struct ExerciseModel: Identifiable, Hashable, Equatable{
+    let id: UUID
+    let name: String
+    let repeats: Int
+    let weight: Int
+}

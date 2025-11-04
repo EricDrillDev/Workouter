@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		ECF94CD2D8B469FC3B3DB13E /* Pods_DrillGym.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B87120A9FB05D4FE968CFD /* Pods_DrillGym.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		783C86032EB1468F005786B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48B87120A9FB05D4FE968CFD /* Pods_DrillGym.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrillGym.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		783C85E92EB1468D005786B1 /* DrillGym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrillGym.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		783C86022EB1468F005786B1 /* DrillGymTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrillGymTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		783C860C2EB1468F005786B1 /* DrillGymUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrillGymUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F820705E99DC6027EEC485D /* Pods-DrillGym.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrillGym.debug.xcconfig"; path = "Target Support Files/Pods-DrillGym/Pods-DrillGym.debug.xcconfig"; sourceTree = "<group>"; };
+		A2624A7507A287018EC5B0EC /* Pods-DrillGym.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrillGym.release.xcconfig"; path = "Target Support Files/Pods-DrillGym/Pods-DrillGym.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECF94CD2D8B469FC3B3DB13E /* Pods_DrillGym.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		146B1B95C289435EBEB39D75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F820705E99DC6027EEC485D /* Pods-DrillGym.debug.xcconfig */,
+				A2624A7507A287018EC5B0EC /* Pods-DrillGym.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2FCACE8E1078FD457E3216F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48B87120A9FB05D4FE968CFD /* Pods_DrillGym.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		783C85E02EB1468D005786B1 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +117,8 @@
 				783C86052EB1468F005786B1 /* DrillGymTests */,
 				783C860F2EB1468F005786B1 /* DrillGymUITests */,
 				783C85EA2EB1468D005786B1 /* Products */,
+				146B1B95C289435EBEB39D75 /* Pods */,
+				2FCACE8E1078FD457E3216F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 783C86152EB1468F005786B1 /* Build configuration list for PBXNativeTarget "DrillGym" */;
 			buildPhases = (
+				127A1CB441EE10C33BAD9D96 /* [CP] Check Pods Manifest.lock */,
 				783C85E52EB1468D005786B1 /* Sources */,
 				783C85E62EB1468D005786B1 /* Frameworks */,
 				783C85E72EB1468D005786B1 /* Resources */,
+				14D9058EC9A50F486F47CCE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,8 +153,6 @@
 				783C85EB2EB1468D005786B1 /* DrillGym */,
 			);
 			name = DrillGym;
-			packageProductDependencies = (
-			);
 			productName = DrillGym;
 			productReference = 783C85E92EB1468D005786B1 /* DrillGym.app */;
 			productType = "com.apple.product-type.application";
@@ -147,8 +174,6 @@
 				783C86052EB1468F005786B1 /* DrillGymTests */,
 			);
 			name = DrillGymTests;
-			packageProductDependencies = (
-			);
 			productName = DrillGymTests;
 			productReference = 783C86022EB1468F005786B1 /* DrillGymTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -170,8 +195,6 @@
 				783C860F2EB1468F005786B1 /* DrillGymUITests */,
 			);
 			name = DrillGymUITests;
-			packageProductDependencies = (
-			);
 			productName = DrillGymUITests;
 			productReference = 783C860C2EB1468F005786B1 /* DrillGymUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -244,6 +267,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		127A1CB441EE10C33BAD9D96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrillGym-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14D9058EC9A50F486F47CCE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrillGym/Pods-DrillGym-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrillGym/Pods-DrillGym-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrillGym/Pods-DrillGym-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		783C85E52EB1468D005786B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -284,12 +353,14 @@
 /* Begin XCBuildConfiguration section */
 		783C86162EB1468F005786B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F820705E99DC6027EEC485D /* Pods-DrillGym.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KPZAPMV46R;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DrillGym/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -309,19 +380,21 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		783C86172EB1468F005786B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2624A7507A287018EC5B0EC /* Pods-DrillGym.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KPZAPMV46R;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DrillGym/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -341,7 +414,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

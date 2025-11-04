@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  DrillGym
-//
-//  Created by Эрик Нугзарович on 10/28/25.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

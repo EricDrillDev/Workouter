@@ -1,8 +1,10 @@
-//
-//  WorkoutModel.swift
-//  DrillGym
-//
-//  Created by Эрик Нугзарович on 11/3/25.
-//
-
 import Foundation
+
+struct WorkoutModel: Identifiable, Hashable, Equatable {
+    let id: UUID
+    let name: String
+    let description: String
+    let data: Date
+    let duration: Duration
+    let exercises: [ExerciseModel]
+}
