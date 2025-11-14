@@ -1,6 +1,7 @@
 import UIKit
 import CoreData
 import Swinject
+import os
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,6 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func registerDependencies() -> Container {
         let container = Container()
+        
+        container.register(Logger.self){ _ in
+            Logger()
+        }
         //Data sources
         container.register(ExercisesDataSource.self) { [weak self] _ in
             ExerciseLocalStorage(context: self!.persistentContainer.viewContext)
