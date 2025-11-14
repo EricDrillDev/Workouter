@@ -39,6 +39,7 @@ final class ExerciseLocalStorage: ExercisesDataSource{
         let request = Exercise.fetchRequest()
         let predicat = NSPredicate(format: "id == %@", exercise.id as CVarArg )
         request.fetchLimit = 1
+        request.predicate = predicat
         
         let entity = try dbContext.fetch(request).first
         entity?.name = exercise.name
@@ -50,6 +51,7 @@ final class ExerciseLocalStorage: ExercisesDataSource{
     func deleteBy(id: UUID) throws {
         let request = Exercise.fetchRequest()
         let predicate = NSPredicate(format: "id == %@", id as CVarArg)
+        request.predicate = predicate
         
         let entity = try dbContext.fetch(request).first
         dbContext.delete(entity!)
